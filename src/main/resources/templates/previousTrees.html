@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Previous Trees</title>
+    <style>
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            display: block;
+            border: 1px solid #999;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: center;
+            min-width: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Previous Trees</h1>
+
+<ul>
+
+    <li th:each="tree : ${previousTrees}">
+        <span th:text="${tree.getValue()}"></span>
+    </li>
+</ul>
+
+</body>
+</html>
+
